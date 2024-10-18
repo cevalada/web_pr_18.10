@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js">
+    </script>
+<style>
+    .container {
+        display: flex;
+        align-items: center;
+    }
+    #myImage {
+        margin-right: 20px;
+    }
+    #earth {
+        margin-right: 20px;
+    }
+    .saturn { display: flex;
+        align-items: center;
+        margin-left:400px;
+    }
+</style>
+</head>
+<body>
+<div class="container">
+
+    <img id="myImage" src="smiling-sun-illustration-character-34434947.png" width="300" height="300">
+    
+    <div>
+
+    <img id="earth" src="earth.png" width="300" height="300">
+    <p>This is Earth where we are living</p>
+
+         </div>
+    </div>
+
+    <div class="saturn">
+    <img id="saturn" src="saturn.png" width="500" height="300">
+    <p>This is Saturn, that is sixth planet from the Sun. </p>
+    </div>
+
+    <script>
+            $("#myImage").click(function() {
+                $(this).fadeToggle();
+            });
+    
+    $(document).scroll(function() {
+        $("#earth").fadeToggle(); 
+        $("p").fadeToggle(); 
+    });
+
+    $(document).scroll(function() {
+        $("#saturn").fadeToggle();
+        $("p").fadeToggle();
+    });
+</script>
+</body>
